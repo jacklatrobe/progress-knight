@@ -4,8 +4,13 @@ An incremental game developed by ihtasham42 and extended by Cameron Gott. https:
 
 Link to the original game: https://ihtasham42.github.io/progress-knight/
 
-# dev-diary  
-7/12/2021  
+Forked by Jack Latrobe (https://latrobe.group/) as a fun side project to pick up and make some story-based enhancements to.
+
+# dev-diary
+## 22/01/2021 - jacklatrobe
+I have forked this project purely for the purposes of raising a pull request back to camerongott to finish off the tooltips and add some new roles to the order of discovery.... but I must admit I am a little bit intrigued by the depth of the dev diary that has been left here, and can see that an impressive amount of work has been put into the rebirth of this idler. Perhaps I too could have a hand in this story... only time will tell...
+
+## 7/12/2021 - camerongott
 It's time to move the story forward. It's time to learn how to be a Chairman so skilled, so wise, that that Chairman is worthy of level 1000.  
 
 The Chairman tooltip alludes to the sole pursuit of immortality. Once a character reaches Chairman, their willpower and focus is dedicated towards discovering the mysteries of both magic and biology in order to find, if there is one, a way to enhance one's lifespan.  
@@ -38,7 +43,7 @@ And a new Job:
 -added three new skills to Mind
 -Added one new job to The Arcane Association  
 
-7/2/2021  
+## 7/2/2021 - camerongott
 Work progresses on Town features. But in the mean time, I added a few goodies to v0.3.  
 
 -added new items to the Farmer job track  
@@ -50,15 +55,14 @@ Future:
 -add all job boost items to the new category
 -change the updateRequiredRow logic to display these separately from the main generic line of items so that they are uncoupled
 
-6/23/2021  
+## 6/23/2021 - camerongott
 -Uncoupled Time Warping and Flow effects. Flow will no longer influence the display value of Time Warp under its skill description  
 -Uncoupled game architecture element assumptions regarding game speed's influencers and display logic. Should enable easier time manipulation in the future  
     by having to modify fewer functions  
 -Refactored getGameSpeed() function into two separate functions, getAllTimeMultipliers() and getGameSpeed().  
 -Continued work on town and civilization features on local repo  
 
-6/21/2021  
-  
+## 6/21/2021 - camerongott
 Bug squashing was today's game. The bug in question was making a little bug nest inside the Auto Learn feature, rendering it completely useless and non-functional.  
 I'll talk a little bit about my thought process as I hunted down this bug, what I ultimately did to fix it and the tradeoffs considered and lessons learned.  
 
@@ -85,7 +89,7 @@ Funnily enough, I agree with both of those qualms. One skill without a requireme
 
 As for the assumptions regarding Concentration's continuing status in the game being a core assumption for this fix, my answer for today is: document. I have documented this as a "FRAGILE FIX" in both code comments inside the related source code, and now here in this dev diary. Is it perfect? Heck no. But if someone forks this project or takes over, there is a route to discover the issue with a few more breadcrumbs than I had to work with. For now, I am satisfied with this interim solution.  
 
-6/20/2021  
+## 6/20/2021 - camerongott
 
 Shop requirements are, in their current state, a little confusing. Today I'll begin the process of cleaning up and clarifying which item is being displayed in the required row, what  
 all the requirements are, and clarifying item tooltips to describe specific effects.  
@@ -97,10 +101,10 @@ Changelog:
 -added Farmer job items  
 -removed Concentration requirement for Unusual Insight to fix the header row height issue  
   
-6/17/2021  
+## 6/17/2021 - camerongott
 -add Flow skill to Mind  
 
-6/16/2021  
+## 6/16/2021 - camerongott
 Initial github.io release.  
 
 *** Changelog ***  
@@ -119,7 +123,7 @@ Add header row color
 Fix a million bugs I forgot to document in the midst of release hype  
 
 
-6/14/2021  
+## 6/14/2021 - camerongott
 ******* Change log *******  
 -Added The Order of Discovery
 -Added Nobility  
@@ -158,7 +162,7 @@ All function restored.
 F-ing typos, man. 
 
 
-6/11/2021  
+## 6/11/2021 - camerongott
 
 I'm satisfied with my mastery of adding items. While I do enjoy thinking up new tooltips and new story directions to explain new items, it's getting a bit tedious.  
 A new feature is badly needed, and the empty navbar space is calling my name. Right now, there are two main features I'm fairly certain I want to add.
@@ -174,7 +178,7 @@ War. Hard to read the military career tooltips without imagining massive battles
 -Rewrote Pack Horse tooltip to add detail and improve sentence flow  
 -Added Weapon Outlet to Merchant item unlock sequence  
 -
-6/10/2021  
+## 6/10/2021 - camerongott
 
 Requirements are important to learn for a few reasons. Requirements help pace the game's unlocks. Requirements help manage UI clutter by hiding
 items, skills, and jobs until they are achievable. 
@@ -195,7 +199,7 @@ All other job items now unlock at job levels instead of savings level.
 Added Pack Horse to Merchant item sequence.  
 
 
-6/8/2021  
+## 6/8/2021 - camerongott
 The shop expansion initiative continues with today's new item: Miner's Lantern!  
 Mining in a dark, dank cave is scary, dangerous, and slow. Lanterns provide useful light to guide a miner's search  
 for precious metals, but beware of carrying a flame into any potential gas pockets!  
@@ -207,12 +211,12 @@ that relies on the descriptions to decide where to render each row. I could add 
 into the shop tab. Something to ponder for now.  
 
 Otherwise, the Miner's Lantern is functional. 
-6/7/2021
 
+## 6/7/2021 - camerongott
 Added Cheap Fishing Rod to the shop. Will likely need further balance testing.   
 Thought: create a chain of better job specific items linked to job level. Eg. Miner level 100 gets access to some sweet income-boosting gear.
 
-6/4/2021  
+## 6/4/2021 - camerongott 
 Entry one:  
 
 Adding an item today.  
@@ -240,7 +244,7 @@ while they are climbing out of poverty.) There are a few ways to address this. F
 One hour later...  
 Nevermind, I found a workaround to make items directly affect job income. Basic Hand Tools are the template to follow (just apply the effect as a task.incomeMultiplier in addMultipliers()).  
 
-6/3/2021  
+## 6/3/2021 - camerongott
 I want to flesh out the beggar job by adding interesting items and story content. Being a beggar is tough work,
 and the more the player feels the hardship of begging the more they will appreciate the achievement of moving up in society.
 My first step is to add an item. This is simple enough to not be daunting on Day Two of this project, but complex enough to touch most
@@ -277,7 +281,7 @@ happiness will likely require a rewrite of this function.
 
 
 
-6/2/2021  
+## 6/2/2021 - camerongott
 Cloned repo, configured Git, got a copy of the game running on my local machine. Woo!
 One hour later...
 Doh! For some reason, the sidebar's progress bars are not displaying.

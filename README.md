@@ -9,19 +9,19 @@ Forked by Jack Latrobe (https://latrobe.group/) as a fun side project to pick up
 # dev-diary
 ## 22/01/2021 - jacklatrobe
 ### CHANGELOG
- -Added detailed tooltip descriptions to Order of Discovery and Nobility roles
- -Renamed 'Probation' role in the Order of Discovery to "Research Candidate"
- -Created new Order of Discovery roles: Researcher, Lead Researcher, Head of Innovation
+ - Added detailed tooltip descriptions to Order of Discovery and Nobility roles
+ - Renamed 'Probation' role in the Order of Discovery to "Research Candidate"
+ - Created new Order of Discovery roles: Researcher, Lead Researcher, Head of Innovation
  
-
+### COMMENTARY
 I have forked this project purely for the purposes of raising a pull request back to camerongott to finish off the tooltips and add some new roles to the order of discovery.... but I must admit I am a little bit intrigued by the depth of the dev diary that has been left here, and can see that an impressive amount of work has been put into the rebirth of this idler. Perhaps I too could have a hand in this story... only time will tell...
 
 ## 7/12/2021 - camerongott
 ### CHANGELOG
--Added three new skills to Mind category
--Added one new job to The Arcane Association
+ - Added three new skills to Mind category
+ - Added one new job to The Arcane Association
 
-
+### COMMENTARY
 It's time to move the story forward. It's time to learn how to be a Chairman so skilled, so wise, that that Chairman is worthy of level 1000.  
 
 The Chairman tooltip alludes to the sole pursuit of immortality. Once a character reaches Chairman, their willpower and focus is dedicated towards discovering the mysteries of both magic and biology in order to find, if there is one, a way to enhance one's lifespan.  
@@ -42,32 +42,32 @@ But when you accept this new honorific, you receive a note in the night:
     "We have followed your progress with great interest. Many have walked this path, but few have used the amulet you now wear to its full potential. But you are not the first to make it this far. Strive on. We will contact you, when the time is right."  
 
 Shifting from lore to code, how do we implement this? Simply add the three skills:  
--Magical Engineering  
--Scales Of Thought  
--Magical Biology  
+ - Magical Engineering  
+ - Scales Of Thought  
+ - Magical Biology  
 
 And a new Job:  
 -Illustrious Chairman
 
 ## 7/2/2021 - camerongott
-Work progresses on Town features. But in the mean time, I added a few goodies to v0.3.  
+### CHANGELOG
+Work progresses on Town features. But in the mean time, I added a few goodies to v0.3:
+ - added new items to the Farmer job track  
+ - added new Small Manor property  
+ - fix for Shop table button heights  
 
--added new items to the Farmer job track  
--added new Small Manor property  
--fix for Shop table button heights  
-
+### COMMENTARY
 Future:  
--add a new item category "Job aids" or some similar name
--add all job boost items to the new category
--change the updateRequiredRow logic to display these separately from the main generic line of items so that they are uncoupled
+- add a new item category "Job aids" or some similar name
+- add all job boost items to the new category
+- change the updateRequiredRow logic to display these separately from the main generic line of items so that they are uncoupled
 
 ## 6/23/2021 - camerongott
-###CHANGELOG
--Uncoupled Time Warping and Flow effects. Flow will no longer influence the display value of Time Warp under its skill description  
--Uncoupled game architecture element assumptions regarding game speed's influencers and display logic. Should enable easier time manipulation in the future  
-    by having to modify fewer functions  
--Refactored getGameSpeed() function into two separate functions, getAllTimeMultipliers() and getGameSpeed().  
--Continued work on town and civilization features on local repo  
+### CHANGELOG
+ - Uncoupled Time Warping and Flow effects. Flow will no longer influence the display value of Time Warp under its skill description  
+ - Uncoupled game architecture element assumptions regarding game speed's influencers and display logic. Should enable easier time manipulation in the future by having to modify fewer functions  
+ - Refactored getGameSpeed() function into two separate functions, getAllTimeMultipliers() and getGameSpeed().  
+ - Continued work on town and civilization features on local repo  
 
 ## 6/21/2021 - camerongott
 Bug squashing was today's game. The bug in question was making a little bug nest inside the Auto Learn feature, rendering it completely useless and non-functional.  
@@ -98,26 +98,26 @@ As for the assumptions regarding Concentration's continuing status in the game b
 
 ## 6/20/2021 - camerongott
 ### CHANGELOG  
--renamed Basic Hand Tools to become Basic Farm Tools  
--reduced first-level job item requirements from job level 20 to job level 10, so that they now unlock at the same time as the higher-tier job and present a choice for the player  
-    of whether to promote or continue investing in the current career  
--added Farmer job items  
--removed Concentration requirement for Unusual Insight to fix the header row height issue 
+ - renamed Basic Hand Tools to become Basic Farm Tools  
+ - reduced first-level job item requirements from job level 20 to job level 10, so that they now unlock at the same time as the higher-tier job and present a choice for the player of whether to promote or continue investing in the current career  
+ - added Farmer job items  
+ - removed Concentration requirement for Unusual Insight to fix the header row height issue 
 
 
 Shop requirements are, in their current state, a little confusing. Today I'll begin the process of cleaning up and clarifying which item is being displayed in the required row, what  
 all the requirements are, and clarifying item tooltips to describe specific effects.   
   
 ## 6/17/2021 - camerongott
--add Flow skill to Mind  
+### CHANGELOG
+- add Flow skill to Mind  
 
 ## 6/16/2021 - camerongott
 ### CHANGELOG
--added two new skills to aid Order progression and magic progression  
--added Trade Psychology skill  
--significantly reduced XP requirements for Order jobs  
--added sassy placeholder tooltips  
--introduced a lot of CSS bugs  
+ - added two new skills to aid Order progression and magic progression  
+ - added Trade Psychology skill  
+ - significantly reduced XP requirements for Order jobs  
+ - added sassy placeholder tooltips  
+ - introduced a lot of CSS bugs  
 
 
 Initial github.io release.  
@@ -133,8 +133,8 @@ Fix a million bugs I forgot to document in the midst of release hype
 
 ## 6/14/2021 - camerongott
 ### CHANGELOG
--Added The Order of Discovery
--Added Nobility  
+ - Added The Order of Discovery
+ - Added Nobility  
 
 ** Adding a new life path **
 
@@ -172,9 +172,9 @@ F-ing typos, man.
 
 ## 6/11/2021 - camerongott
 ### CHANGELOG
--Added Small Shop to Merchant item unlock sequence
--Rewrote Pack Horse tooltip to add detail and improve sentence flow  
--Added Weapon Outlet to Merchant item unlock sequence  
+ - Added Small Shop to Merchant item unlock sequence
+ - Rewrote Pack Horse tooltip to add detail and improve sentence flow  
+ - Added Weapon Outlet to Merchant item unlock sequence  
 
 
 I'm satisfied with my mastery of adding items. While I do enjoy thinking up new tooltips and new story directions to explain new items, it's getting a bit tedious.  
@@ -188,12 +188,12 @@ War. Hard to read the military career tooltips without imagining massive battles
 
 ## 6/10/2021 - camerongott
 ### CHANGELOG
- -Crappy Anvil (with TaskRequirement instead of CoinRequirement)  
- -Cheap Hand Tools now unlock at Farmer level 20  
- -Cheap Fishing Rod now unlocks at Fisherman level 20  
- -All other job items now unlock at job levels instead of savings level.  
- -Added Pack Horse to Merchant item sequence.  
- -Requirements are important to learn for a few reasons. Requirements help pace the game's unlocks. Requirements help manage UI clutter by hiding items, skills, and jobs until they are achievable. 
+ - Crappy Anvil (with TaskRequirement instead of CoinRequirement)  
+ - Cheap Hand Tools now unlock at Farmer level 20  
+ - Cheap Fishing Rod now unlocks at Fisherman level 20  
+ - All other job items now unlock at job levels instead of savings level.  
+ - Added Pack Horse to Merchant item sequence.  
+ - Requirements are important to learn for a few reasons. Requirements help pace the game's unlocks. Requirements help manage UI clutter by hiding items, skills, and jobs until they are achievable. 
  
 
 The Requirement base class has three member variables: elements, requirements, and boolean isCompleted.  

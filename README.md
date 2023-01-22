@@ -70,6 +70,7 @@ Future:
  - Continued work on town and civilization features on local repo  
 
 ## 6/21/2021 - camerongott
+### COMMENTARY
 Bug squashing was today's game. The bug in question was making a little bug nest inside the Auto Learn feature, rendering it completely useless and non-functional.  
 I'll talk a little bit about my thought process as I hunted down this bug, what I ultimately did to fix it and the tradeoffs considered and lessons learned.  
 
@@ -103,7 +104,7 @@ As for the assumptions regarding Concentration's continuing status in the game b
  - added Farmer job items  
  - removed Concentration requirement for Unusual Insight to fix the header row height issue 
 
-
+### COMMENTARY
 Shop requirements are, in their current state, a little confusing. Today I'll begin the process of cleaning up and clarifying which item is being displayed in the required row, what  
 all the requirements are, and clarifying item tooltips to describe specific effects.   
   
@@ -119,7 +120,7 @@ all the requirements are, and clarifying item tooltips to describe specific effe
  - added sassy placeholder tooltips  
  - introduced a lot of CSS bugs  
 
-
+### COMMENTARY
 Initial github.io release.  
 
 Adding new skills (come on, I shouldn't need to make myself notes by now, right?):  
@@ -136,6 +137,7 @@ Fix a million bugs I forgot to document in the midst of release hype
  - Added The Order of Discovery
  - Added Nobility  
 
+### COMMENTARY
 ** Adding a new life path **
 
 Today I'll be adding a few new life paths. By life path, I mean a set of related jobs. We have seen Commoner, Military and TAA life paths. 
@@ -177,6 +179,7 @@ F-ing typos, man.
  - Added Weapon Outlet to Merchant item unlock sequence  
 
 
+### COMMENTARY
 I'm satisfied with my mastery of adding items. While I do enjoy thinking up new tooltips and new story directions to explain new items, it's getting a bit tedious.  
 A new feature is badly needed, and the empty navbar space is calling my name. Right now, there are two main features I'm fairly certain I want to add.
 
@@ -196,6 +199,7 @@ War. Hard to read the military career tooltips without imagining massive battles
  - Requirements are important to learn for a few reasons. Requirements help pace the game's unlocks. Requirements help manage UI clutter by hiding items, skills, and jobs until they are achievable. 
  
 
+### COMMENTARY
 The Requirement base class has three member variables: elements, requirements, and boolean isCompleted.  
 Requirement has two functions right now: constructor, and isCompleted().
 
@@ -206,6 +210,7 @@ The subclasses of Requirement mainly differ in their use of the requirements mem
 
 
 ## 6/8/2021 - camerongott
+### COMMENTARY
 The shop expansion initiative continues with today's new item: Miner's Lantern!  
 Mining in a dark, dank cave is scary, dangerous, and slow. Lanterns provide useful light to guide a miner's search  
 for precious metals, but beware of carrying a flame into any potential gas pockets!  
@@ -219,11 +224,13 @@ into the shop tab. Something to ponder for now.
 Otherwise, the Miner's Lantern is functional. 
 
 ## 6/7/2021 - camerongott
+### COMMENTARY
 Added Cheap Fishing Rod to the shop. Will likely need further balance testing.   
 Thought: create a chain of better job specific items linked to job level. Eg. Miner level 100 gets access to some sweet income-boosting gear.
 
 ## 6/4/2021 - camerongott 
-Entry one:  
+### COMMENTARY
+** Entry one: **
 
 Adding an item today.  
 Step one: add the item data to const itemBaseData.   
@@ -241,7 +248,7 @@ First item added. First mod complete. Feels good mayne.
 PS. Also added a dev mode to the code with a single-variable trigger to influence a few skill modifiers and the game speed. 
 Should help test long runs. 
 
-Entry two:
+** Entry two: **
 
 After playing around with the added rag clothing, I feel like there is an impending balance issue. The more items I add, the more expense. But if items don't
 directly affect income, the scaling of income is such that most items will be unaffordable in their current tier (eg beggar items can't all be purchased like a real beggar would
@@ -251,6 +258,7 @@ One hour later...
 Nevermind, I found a workaround to make items directly affect job income. Basic Hand Tools are the template to follow (just apply the effect as a task.incomeMultiplier in addMultipliers()).  
 
 ## 6/3/2021 - camerongott
+### COMMENTARY
 I want to flesh out the beggar job by adding interesting items and story content. Being a beggar is tough work,
 and the more the player feels the hardship of begging the more they will appreciate the achievement of moving up in society.
 My first step is to add an item. This is simple enough to not be daunting on Day Two of this project, but complex enough to touch most
@@ -288,6 +296,7 @@ happiness will likely require a rewrite of this function.
 
 
 ## 6/2/2021 - camerongott
+### COMMENTARY
 Cloned repo, configured Git, got a copy of the game running on my local machine. Woo!
 One hour later...
 Doh! For some reason, the sidebar's progress bars are not displaying.
